@@ -1,0 +1,12 @@
+application: rclsrobot
+version: oauth
+runtime: python
+api_version: 1
+
+handlers:
+- url: /ecomp
+  script: ecompbot.py
+  login: admin
+
+- url: /.*
+  script: main.py
