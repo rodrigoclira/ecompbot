@@ -1,0 +1,4 @@
+cron:
+-  description: ecomp
+   url: /ecomp
+   schedule: every 1 hours
