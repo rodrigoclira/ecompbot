@@ -92,7 +92,7 @@ class MainPage(webapp.RequestHandler):
                 news=News(texto,data,tag,link)
                 print news.noticia.encode('utf-8')
                 
-                if hoje != news.data and not existe_noticia(news.id):
+                if hoje == news.data and not existe_noticia(news.id):
                     
                     post_update(status = news.tweet)
                     news.save()
